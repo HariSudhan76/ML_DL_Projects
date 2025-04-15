@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ML_DL_Project"
+version = "0.0.1"
+description = "An ML and DL project with structured packaging"
+authors = [{ name="G. Hari", email= "g.harisudhan76@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["pandas",
+"numpy",
+"matplotlib",
+"seaborn",
+"scikit-learn",
+"tensorflow"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
